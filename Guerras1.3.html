@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Antigua Grecia</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script>
+
+    function toggleSubmenu() {
+      const submenu = document.getElementById('submenu');
+      submenu.classList.toggle('oculto');
+    }
+  
+    function mostrarContenido(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => sec.classList.add('oculto'));
+      
+      const mostrar = document.getElementById(id);
+      if (mostrar) {
+        mostrar.classList.remove('oculto');
+      }
+    }
+
+  </script>
+  </head>
+
+  <body class="cuerpo-guerras">
+    <aside class="sidebar-guerras">
+
+        <nav class="nav-guerras">
+            <ul>
+              <li><a href="index.html" >Inicio</a></li>
+                <li><a href="Biografia.html">Biografia</a></li>
+                  <li><a href="Reino-y-Conquista.html">Reino y Conquistas</a></li>
+            
+                  <div class="menu-principal">
+            
+                    <li><a class="active" onclick="toggleSubmenu()">Guerras importantes</a></li>
+            
+                    <div id="submenu" class="submenu oculto">
+                        <a href="Guerras1.1.html"><button onclick="mostrarContenido('granico')"> Batalla del Gránico</button>
+                      <a href="Guerras1.2.html"><button onclick="mostrarContenido('isus')">Batalla de Issos</button></a>
+                      <button onclick="mostrarContenido('gaugamela')">Batalla de Gaugamela</button></a>
+            
+                    </div>
+                    
+                  </div>
+            
+                  <li><a href="Ultimo-años-y-Muerte.html">Últimos Años y Muerte</a></li>
+                  <li><a href="Legado.html">Legado</a></li>
+                  <li><a href="Contactos.html">Contactanos</a></li>
+                  
+                </ul>
+                
+                </nav>
+
+                <img src="IMGs/Logo ITH.png" class="ithlogo" alt="ITH logo">
+            </aside>
+          
+            <main class="glass-container-guerras">
+              <div class="floating-text-guerras">
+                
+                
+                
+              </div>
+
+    </main>
+
+   <div class="glass-guerras">
+      <h1 class="encabezado-guerra3">⚔️ Batalla de Gaugamela <br>(1 de octubre de 331 a.C.)</h1>
+      <div class="texto-gerra3-izquierda">
+      <p> 
+        La Batalla de Gaugamela, librada cerca de la actual ciudad de Mosul en el norte de 
+        Irak, fue el enfrentamiento decisivo entre Alejandro Magno y el rey persa Darío    
+        III. Tras su triunfo en Issos, Alejandro avanzó al corazón del Imperio Persa;      
+        Darío, reuniendo un ejército numéricamente muy superior, eligió Gaugamela por su   
+        terreno llano, ideal para desplegar sus carros de guerra y unidad de élite. Sin    
+        embargo, Alejandro dividió sus fuerzas en un ala derecha fuerte y una falange      
+        compacta en el centro, aprovechando maniobras de distracción y rápidas cargas de   
+        caballería.<br><br>
+
+         Durante la batalla, Alejandro encabezó la carga contra el flanco derecho persa    
+        para obligar a Darío a reagruparse, mientras que la falange macedonia rompía el 
+        frente enemigo. Al ver el colapso de sus líneas y temiendo ser capturado, Darío 
+        huyó, provocando la desmoralización total de sus tropas. La victoria no solo    
+        abrió las puertas de Babilonia y Susa, sino que marcó el fin efectivo del poder 
+        persa y la consolidación del imperio helenístico. 
+      </p>
+
+
+     
+            </div>
+      
+      </div>
+      
+      <img src="IMGs/Guerra3.1.jpg" class="imagen-Guerra3-1" alt="Imagen central">
+      
+     
+
+       <section class="tabla-Guerra3">
+
+  <h2>Batalla de Gaugamela</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Aspecto</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Fecha y Lugar</td>
+        <td>1 de octubre del 331 a.C., cerca de Gaugamela, en la actual Irak.</td>
+      </tr>
+      <tr>
+        <td>Oponentes</td>
+        <td>Ejército macedonio de Alejandro Magno vs. el Imperio Persa de Darío III.</td>
+      </tr>
+      <tr>
+        <td>Estrategia de Alejandro</td>
+        <td>Usó una formación oblicua y flanqueó al ejército persa para atacar su centro.</td>
+      </tr>
+      <tr>
+        <td>Resultado</td>
+        <td>Victoria decisiva para Alejandro. Darío huyó y el Imperio Persa quedó prácticamente derrotado.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+                      
+      </div>
+
+    </body>
+
+    <footer class="footer-guerras">
+      © 2025 - Alexiz ELvir Ñ
+    </footer>
+    
+    </html>

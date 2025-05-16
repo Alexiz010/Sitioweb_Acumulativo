@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Antigua Grecia</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script>
+
+    function toggleSubmenu() {
+      const submenu = document.getElementById('submenu');
+      submenu.classList.toggle('oculto');
+    }
+  
+    function mostrarContenido(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => sec.classList.add('oculto'));
+      
+      const mostrar = document.getElementById(id);
+      if (mostrar) {
+        mostrar.classList.remove('oculto');
+      }
+    }
+
+
+
+  </script>
+
+  </head>
+
+  <body class="cuerpo-RyC">
+    <aside class="sidebar-RyC">
+
+        <nav class="nav-RyC">
+            <ul>
+              <li><a href="index.html" >Inicio</a></li>
+                <li><a href="Biografia.html">Biografia</a></li>
+                  <li><a class="active">Reino y Conquistas</a></li>
+            
+                  <div class="menu-principal">
+            
+                    <li><a class= "btnGuerras"onclick="toggleSubmenu()"> Guerras importantes</a></li>
+            
+                    <div id="submenu" class="submenu oculto">
+                      <a href="Guerras1.1.html"><button onclick="mostrarContenido('granico')">Batalla del Gránico</button></a>
+                      <a href="Guerras1.2.html"><button onclick="mostrarContenido('isus')">Batalla de Isus</button></a>
+                      <a href="Guerras1.3.html"><button onclick="mostrarContenido('gaugamela')">Batalla de Gaugamela</button></a>
+            
+                    </div>
+                    
+                  </div>
+            
+                  <li><a href="Ultimo-años-y-Muerte.html">Últimos Años y Muerte</a></li>
+                  <li><a href="Legado.html">Legado</a></li>
+                  <li><a href="Contactos.html">Contactanos</a></li>
+                </ul>
+                
+                </nav>
+
+                <img src="IMGs/Logo ITH.png" class="ithlogo" alt="ITH logo">
+            </aside>
+          
+            <main class="glass-container-RyC">
+                
+                <div class="titulo-RyC">MAPA DEl <br> IMPERIO Y CONQUISTA <br>  DE <br> ALEJANDRO MAGNO</div>
+
+              <div class="floating-text-RyC">
+                
+                
+                
+              </div>
+
+              
+                </main>
+
+                <img src="IMGs/MapaImperioRomano2.0.avif" class="Mapa-interactivo" alt="Mapa">
+
+                <div class="Mapa-interactivo">
+                    
+                  <!-- Primera ubicaion -->
+                    <div class="map-point" style="top: 35%; left: 35%;" data-title="🏛 Origen del Imperio" data-description="Macedonia (actual norte de Grecia): Era su reino de origen.
+
+                    Grecia: Alejandro unificó las polis griegas tras la Batalla de Queronea (338 a.C.) y usó su poder como líder de la Liga de Corinto.">
+
+                      <div class="tooltip"></div>
+                      <div class="info-box"></div>
+                    </div>
+                  
+                    <!-- segunda ubicaion -->
+                    <div class="map-point" style="top: 30%; left: 60%;" data-title="Asia Menor (Turquía actual)" data-description="Primera gran conquista tras cruzar el Helesponto.
+
+                    Ciudades importantes conquistadas: Éfeso, Halicarnaso, Gordion (donde desató el famoso nudo gordiano).">
+
+                        <div class="tooltip"></div>
+                        <div class="info-box"></div>
+                      </div>
+
+                     <!-- tercera ubicaion -->
+                      <div class="map-point" style="top: 10%; left: 15%;" data-title="Siria y Fenicia (Líbano, Siria)" data-description="Batalla de Issos (333 a.C.): Victoria clave sobre el emperador persa Darío III.
+
+                      Sitio de Tiro: dura conquista de una ciudad fortificada sobre el mar.">
+
+                        <div class="tooltip"></div>
+                        <div class="info-box"></div>
+                      </div>
+
+                    
+                     <!-- cuarta ubicaion -->
+                     <div class="map-point" style="top: 66%; left: 27%;" data-title="Mesopotamia y Persia" data-description="Grandes victorias: Gaugamela (331 a.C.), donde venció definitivamente a Darío III.
+
+                     Conquistó Babilonia, Susa, Persépolis (la quemó), y Ecbatana.">
+
+                        <div class="tooltip"></div>
+                        <div class="info-box"></div>
+                      </div>
+
+
+                     <!-- Quinta ubicaion -->
+                     <div class="map-point" style="top: 50%; left: 85%;" data-title="Asia Central y Bactriana (Afganistán, Uzbekistán)" data-description="Campañas difíciles contra tribus resistentes.
+
+                     Se casó con Roxana, princesa bactriana.">
+                     
+                        <div class="tooltip"></div>
+                        <div class="info-box"></div>
+                      </div>
+
+
+                     <!-- sexta ubicaion -->
+                     <div class="map-point" style="top: 72%; left: 55%;" data-title="Egipto" data-description="Fue recibido como libertador. Fundó Alejandría, que se volvió un centro cultural clave.
+
+Fue proclamado hijo de Amón en el oasis de Siwa.">
+           <div class="tooltip"></div>
+           <div class="info-box"></div>
+         </div>
+        </div>
+
+
+<!-- Al final del body -->
+<script>
+    document.querySelectorAll('.map-point').forEach(point => {
+      const tooltip = point.querySelector('.tooltip');
+      const infoBox = point.querySelector('.info-box');
+  
+      point.addEventListener('mouseenter', () => {
+        tooltip.textContent = point.dataset.title;
+      });
+  
+      let visible = false;
+      point.addEventListener('click', () => {
+        if (visible) {
+          infoBox.style.display = 'none';
+        } else {
+          infoBox.innerHTML = `<strong>${point.dataset.title}</strong><br>${point.dataset.description}`;
+          infoBox.style.display = 'block';
+        }
+        visible = !visible;
+      });
+    });
+  </script>
+  
+
+    </body>
+
+    <footer class="footer-RyC">
+      © 2025 - Alexiz ELvir Ñ
+    </footer>
+    
+    </html>
+
+   

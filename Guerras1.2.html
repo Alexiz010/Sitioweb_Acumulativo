@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Antigua Grecia</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script>
+
+    function toggleSubmenu() {
+      const submenu = document.getElementById('submenu');
+      submenu.classList.toggle('oculto');
+    }
+  
+    function mostrarContenido(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => sec.classList.add('oculto'));
+      
+      const mostrar = document.getElementById(id);
+      if (mostrar) {
+        mostrar.classList.remove('oculto');
+      }
+    }
+
+  </script>
+  </head>
+
+  <body class="cuerpo-guerras">
+    <aside class="sidebar-guerras">
+
+        <nav class="nav-guerras">
+            <ul>
+              <li><a href="index.html" >Inicio</a></li>
+                <li><a href="Biografia.html">Biografia</a></li>
+                  <li><a href="Reino-y-Conquista.html">Reino y Conquistas</a></li>
+            
+                  <div class="menu-principal">
+            
+                    <li><a class="active" onclick="toggleSubmenu()">Guerras importantes</a></li>
+            
+                    <div id="submenu" class="submenu oculto">
+                        <a href="Guerras1.1.html"><button onclick="mostrarContenido('granico')"> Batalla del Gránico</button>
+                      <button onclick="mostrarContenido('isus')">Batalla de Issos</button></a>
+                      <a href="Guerras1.3.html"><button onclick="mostrarContenido('gaugamela')">Batalla de Gaugamela</button></a>
+            
+                    </div>
+                    
+                  </div>
+            
+                  <li><a href="Ultimo-años-y-Muerte.html">Últimos Años y Muerte</a></li>
+                  <li><a href="Legado.html">Legado</a></li>
+                  <li><a href="Contactos.html">Contactanos</a></li>
+                  
+                </ul>
+                
+                </nav>
+
+                <img src="IMGs/Logo ITH.png" class="ithlogo" alt="ITH logo">
+            </aside>
+          
+            <main class="glass-container-guerras">
+              <div class="floating-text-guerras">
+                
+                
+                
+              </div>
+
+              
+                </main>
+
+                <div class="glass-guerras">
+                    <h1 class="encabezado-guerra2">⚔️ Batalla de Issos (333 a.C.)</h1>
+                    <div class="texto-gerra2-izquierda"> 
+                        <p>
+                            <h2>🔢 resumen de la batalla</h2><br>
+                            Alejandro avanza por Asia Menor hacia el sur.<br><br><br>
+                            
+                            Darío lo intercepta cerca del río Pinaro.<br><br><br>
+                            
+                            Alejandro ataca el centro persa directamente.<br><br><br>
+                            
+                            Darío huye y su ejército se desmorona.
+                            </p>
+
+
+                    
+                    
+            </div>
+          <img src="IMGs/Guerra2.1issos.png" class="imagen-Guerra2-1" alt="Imagen derecha">
+
+          <div class="texto-gerra2-centro">
+   <p>
+       La Batalla de Isus fue uno de los enfrentamientos más decisivos en la campaña de Alejandro 
+   Magno contra el Imperio Persa. Ocurrió en la región costera del sur de Asia Menor, cerca   
+   del río Pinaro. Después de cruzar el Helesponto y avanzar por Asia Menor, Alejandro se     
+   encontró con el gran ejército del rey persa Darío III, quien intentó cortarle el paso      
+   desde la retaguardia. A pesar de ser superado numéricamente, Alejandro utilizó el terreno  
+   estrecho y montañoso de la zona para limitar el número de tropas que los persas podían     
+   desplegar, neutralizando así su ventaja.<br><br>
+   Durante el combate, Alejandro encabezó un ataque directo al centro del ejército persa,     
+    apuntando al mismo Darío III. Al ver que la situación se volvía crítica, Darío abandonó el 
+    campo de batalla en su carro de guerra, causando el pánico y la desorganización entre sus  
+    tropas. Esta retirada fue clave para la victoria macedonia.<br><br>
+
+     Gracias a este triunfo, Alejandro capturó el campamento persa y a la familia de Darío, a   
+     quienes trató con dignidad, ganándose admiración incluso entre sus enemigos. La victoria en
+     Issos le permitió tomar control de importantes territorios como Siria y Fenicia, lo que    
+     allanó su camino hacia Egipto y, eventualmente, hacia el corazón del Imperio Persa.
+     </p>
+               
+      </div>
+
+                    <img src="IMGs/Guerra2.2issos.png" class="imagen-Guerra2-2" alt="Imagen izquierda">
+
+      <div class="texto-gerra2-derecha">
+          <p>
+      <h2>datos clave</h2><br>
+      Primera vez que Alejandro enfrentó personalmente a Darío III.<br><br><br>
+
+         El terreno estrecho fue decisivo para Alejandro.<br><br><br>
+                            
+       Se capturó a la familia real persa.<br><br><br>
+                            
+         Supuso el control de Siria y Fenicia.
+         </p>
+               
+          </div>
+      </div>
+
+
+
+
+
+
+
+    </body>
+
+    <footer class="footer-guerras">
+      © 2025 - Alexiz ELvir Ñ
+    </footer>
+    
+    </html>

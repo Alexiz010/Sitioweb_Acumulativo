@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Antigua Grecia</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script>
+
+    function toggleSubmenu() {
+      const submenu = document.getElementById('submenu');
+      submenu.classList.toggle('oculto');
+    }
+  
+    function mostrarContenido(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => sec.classList.add('oculto'));
+      
+      const mostrar = document.getElementById(id);
+      if (mostrar) {
+        mostrar.classList.remove('oculto');
+      }
+    }
+
+  </script>
+  </head>
+
+  <body class="cuerpo-biografia">
+    <aside class="sidebar-biografia">
+
+        <nav class="nav-biografia">
+            <ul>
+              <li><a href="index.html" >Inicio</a></li>
+                <li><a class="active">Biografia</a></li>
+                  <li><a href="Reino-y-Conquista.html">Reino y Conquistas</a></li>
+            
+                  <div class="menu-principal">
+            
+                    <li><a class= "btnGuerras"onclick="toggleSubmenu()">Guerras importantes</a></li>
+            
+                    <div id="submenu" class="submenu oculto">
+                      <a href="Guerras1.1.html"><button onclick="mostrarContenido('granico')">Batalla del Gránico</button></a>
+          <a href="Guerras1.2.html"><button onclick="mostrarContenido('isus')">Batalla de Isus</button></a>
+          <a href="Guerras1.3.html"><button onclick="mostrarContenido('gaugamela')">Batalla de Gaugamela</button></a>
+            
+                    </div>
+                    
+                  </div>
+            
+                  <li><a href="Ultimo-años-y-Muerte.html">Últimos Años y Muerte</a></li>
+                  <li><a href="Legado.html">Legado</a></li>
+                  <li><a href="Contactos.html">Contactanos</a></li>
+                  
+                </ul>
+                
+                </nav>
+
+                <img src="IMGs/Logo ITH.png" class="ithlogo" alt="ITH logo">
+            </aside>
+          
+            <main class="glass-container-biografia">
+              <div class="floating-text-biografia">
+                
+                
+                
+              </div>
+
+              
+                </main>
+
+                <div class="glass-container">
+                    <div class="texto-superior-izquierda">
+                    <p><marquee behavior="alternate"><h1 class="encabezado">Biografia de Alejandro Magno</h1></marquee></p>
+                      <p>
+                      Alejandro Magno, también conocido como Alejandro III de Macedonia, nació en la ciudad de Pella, capital del Reino de Macedonia, el 20 de julio del  
+                      año 356 a.C. Fue hijo del rey Filipo II, un poderoso monarca que logró unificar a la mayoría de las ciudades-estado griegas bajo su dominio, y de   
+                      Olimpia, una princesa de Epiro, que influiría profundamente en la educación y carácter del joven Alejandro.  Desde temprana edad, demostró una      
+                      inteligencia y ambición fuera de lo común, por lo que su padre eligió como tutor al gran filósofo  Aristóteles, quien le enseñó filosofía, ciencia, 
+                      medicina, literatura y retórica. Esta formación académica despertó en Alejandro un profundo interés por el conocimiento, la cultura griega y el     
+                      deseo de dejar una huella en la historia.<br><br>
+
+                      A los 16 años, ya actuaba como regente de Macedonia cuando su padre estaba en campaña. A los 20 años, tras el asesinato de Filipo II en el año      
+                      336 a.C., Alejandro heredó el trono. Aunque su ascenso no estuvo libre de conflictos internos, logró consolidar su poder rápidamente y eliminar a   
+                      los posibles rivales. Pronto, retomó el proyecto de su padre: la conquista del Imperio Persa. En el año 334 a.C., Alejandro cruzó el Helesponto     
+                      (actual estrecho de los Dardanelos) con un ejército relativamente pequeño, pero bien entrenado y leal. En la Batalla del Gránico, obtuvo su primera 
+                      gran victoria frente a los persas.
+                    </p>
+                    </div>
+
+                    <div>
+                    <img src="IMGs/Estatua A.M..avif" class="imagen-superior-derecha" alt="Imagen 1">
+                    </div>
+
+                    <img src="IMGs/Estatua2 A.M..webp" class="imagen-inferior-izquierda" alt="Imagen 2">
+                    <div class="texto-inferior-derecha">
+                      <p>
+                      Lejos de detenerse, Alejandro continuó su campaña hacia el este, llegando hasta la India. Allí enfrentó a reinos como el de Poros, al que venció en la Batalla del 
+                      Hidaspes (326 a.C.). Sin embargo, el desgaste y las duras condiciones climáticas hicieron que su ejército se negara a avanzar más allá. Alejandro se vio obligado  
+                      a regresar, pero aprovechó el viaje de vuelta para organizar sus conquistas y promover la fusión de culturas entre griegos y pueblos orientales.<br><br>
+
+                      Durante su corta vida, Alejandro fundó más de veinte ciudades llamadas "Alejandría", fomentó el comercio, la difusión de la lengua griega y la mezcla de  
+                      tradiciones. Aunque fue criticado por adoptar algunas costumbres persas, su objetivo era crear un imperio unificado y duradero, en el que Oriente y Occidente  
+                      pudieran convivir. En el año 323 a.C., con solo 32 años de edad, murió en la ciudad de Babilonia, bajo circunstancias misteriosas que aún hoy se debaten. Se  
+                      cree que pudo haber sido por malaria, fiebre tifoidea, o incluso por envenenamiento.<br><br>
+                      
+                      El legado de Alejandro Magno es inmenso. No solo por haber creado uno de los imperios más grandes de la historia en apenas una década, sino por haber dado 
+                      origen a la época helenística, un periodo en el que la cultura griega se mezcló con la de Egipto, Persia, Mesopotamia e India. Su figura se convirtió en leyenda 
+                      y fue admirada por líderes posteriores como Julio César, Napoleón Bonaparte o incluso generales modernos. A pesar de su temprana muerte, su nombre quedó grabado 
+                      en la historia como uno de los conquistadores más brillantes y ambiciosos de todos los tiempos.
+                      </p>
+
+
+                      </div>
+                  </div>
+
+
+
+
+
+
+
+    </body>
+
+    <footer class="footer-biografia">
+      © 2025 - Alexiz ELvir Ñ
+    </footer>
+    
+    </html>

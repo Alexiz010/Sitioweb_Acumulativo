@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Antigua Grecia</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script>
+
+    function toggleSubmenu() {
+      const submenu = document.getElementById('submenu');
+      submenu.classList.toggle('oculto');
+    }
+  
+    function mostrarContenido(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => sec.classList.add('oculto'));
+      
+      const mostrar = document.getElementById(id);
+      if (mostrar) {
+        mostrar.classList.remove('oculto');
+      }
+    }
+
+  </script>
+  </head>
+
+  <body class="cuerpo-UAM">
+    <aside class="sidebar-UAM">
+
+        <nav class="nav-UAM">
+            <ul>
+              <li><a href="index.html" >Inicio</a></li>
+                <li><a>Biografia</a></li>
+                  <li><a href="Reino-y-Conquista.html">Reino y Conquistas</a></li>
+            
+                  <div class="menu-principal">
+            
+                    <li><a class= "btnGuerras"onclick="toggleSubmenu()">Guerras importantes</a></li>
+            
+                    <div id="submenu" class="submenu oculto">
+                      <a href="Guerras1.1.html"><button onclick="mostrarContenido('granico')">Batalla del Gránico</button></a>
+          <a href="Guerras1.2.html"><button onclick="mostrarContenido('isus')">Batalla de Isus</button></a>
+          <a href="Guerras1.3.html"><button onclick="mostrarContenido('gaugamela')">Batalla de Gaugamela</button></a>
+            
+                    </div>
+                  </div>
+
+                  <li><a  class="active">Últimos Años y Muerte</a></li>
+                  <li><a href="Legado.html">Legado</a></li>
+                  <li><a href="Contactos.html">Contactanos</a></li>
+
+                </ul>
+                
+                </nav>
+
+                <img src="IMGs/Logo ITH.png" class="ithlogo" alt="ITH logo">
+            </aside>
+          
+            <main class="glass-container-biografia">
+
+              <div class="floating-text-biografia">
+         
+              </div>
+
+                </main>
+
+                <div class="glass-container-UAM">
+                    <div class="flip-container">
+    <div class="flipper" onclick="flipImage(this)">
+      <div class="front">
+        <img src="IMGs/AlegandroStarWars.jpg" class="imgUAM" alt="Imagen">
+      </div>
+    <div class="back">
+  <div class="back-content">
+    <h3>🪖Regreso desde la India<br>(326–324 a.C.)</h3>
+    <p>Después de conquistar gran parte del noroeste de la India y vencer al rey Poros en la batalla del Hidaspes, 
+        sus tropas, cansadas y desmoralizadas, se negaron a continuar. Alejandro accedió a regresar, cruzando el 
+        desierto de Gedrosia, donde perdió miles de soldados por el calor, la sed y el hambre. Esta etapa fue una 
+        de las más difíciles de su campaña.</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Imagen 2 -->
+  <div class="flip-container">
+    <div class="flipper" onclick="flipImage(this)">
+      <div class="front">
+        <img src="IMGs/AlejandroGuapo.avif" class="imgUAM" alt="Imagen 2">
+      </div>
+       <div class="back">
+  <div class="back-content">
+    <h3>🏛️Regreso desde la India</h3>
+        <p>Una vez de regreso en Babilonia, Alejandro intentó consolidar su imperio: organizó matrimonios mixtos entre 
+            macedonios y persas, promovió la fusión cultural y planeaba nuevas conquistas, incluyendo Arabia y el oeste 
+            del Mediterráneo. Sin embargo, sus decisiones provocaron tensiones con sus generales, quienes temían perder 
+            su influencia.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Imagen 3 -->
+  <div class="flip-container">
+    <div class="flipper" onclick="flipImage(this)">
+      <div class="front">
+        <img src="IMGs/TumbaMagno.jpg" class="imgUAM" alt="Imagen 3">
+      </div>
+      <div class="back">
+  <div class="back-content">
+    <h3>⚰️ Enfermedad y muerte (323 a.C.)</h3>
+        <p>
+En junio del 323 a.C., en Babilonia, Alejandro cayó gravemente enfermo tras un banquete. Tras varios días de fiebre 
+alta, murió a los 32 años. Las causas siguen siendo debatidas: malaria, fiebre tifoidea o incluso envenenamiento. Su 
+muerte dejó un enorme vacío y desató guerras entre sus generales (los diádocos), que dividieron su imperio.
+</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="Encabezado-UAM">
+<h1>Ultimos años de vida y muerde de Alejandro Magno</h1>
+</div>
+
+<div class="instructivo">
+<p>
+    (clic en la imagen para ver la información)
+</p>
+</div>
+   </div>
+  </div>
+
+  <script>
+    function flipImage(element) {
+      // Si ya está volteado, quita la rotación
+      if (element.style.transform === 'rotateY(180deg)') {
+        element.style.transform = '';
+      } else {
+        element.style.transform = 'rotateY(180deg)';
+      }
+    }
+  </script>
+
+    </body>
+
+    <footer class="footer-Legado">
+      © 2025 - Alexiz ELvir Ñ
+    </footer>
+    
+    </html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antigua Grecia</title>
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script>
+    function toggleSubmenu() {
+      const submenu = document.getElementById('submenu');
+      submenu.classList.toggle('oculto');
+    }
+  
+    function mostrarContenido(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => sec.classList.add('oculto'));
+      
+      const mostrar = document.getElementById(id);
+      if (mostrar) {
+        mostrar.classList.remove('oculto');
+      }
+    }
+  </script>
+  
+</head>
+
+<body>
+  <aside class="sidebar">
+    
+    <nav>
+<ul>
+  <li><a class="active">Inicio</a></li>
+    <li><a href="Biografia.html">Biografia</a></li>
+      <li><a href="Reino-y-Conquista.html">Reino y Conquistas</a></li>
+
+      <div class="menu-principal">
+
+        <li><a class= "btnGuerras"onclick="toggleSubmenu()">Guerras importantes</a></li>
+
+        <div id="submenu" class="submenu oculto">
+          <a href="Guerras1.1.html"><button onclick="mostrarContenido('granico')">Batalla del Gránico</button></a>
+          <a href="Guerras1.2.html"><button onclick="mostrarContenido('isus')">Batalla de Isus</button></a>
+          <a href="Guerras1.3.html"><button onclick="mostrarContenido('gaugamela')">Batalla de Gaugamela</button></a>
+
+        </div>
+        
+      </div>
+
+      <li><a href="Ultimo-años-y-Muerte.html">Últimos Años y Muerte</a></li>
+      <li><a href="Legado.html">Legado</a></li>
+      <li><a href="Contactos.html">Contactanos</a></li>
+
+    </ul>
+    
+    </nav>
+    
+    
+    <img src="IMGs/Logo ITH.png" class="ithlogo" alt="ITH logo">
+  </aside>
+
+  <main class="glass-container1">
+    
+    <div class="floating-text">
+      <h1>Alejandro Magno<br><span class="highlight">(356 a.C. – 323 a.C.)</span></h1>
+      <p>
+        Fue un rey de Macedonia que conquistó gran parte del mundo conocido, desde Grecia hasta la India. 
+        Alumno de Aristóteles, unificó Grecia y creó uno de los imperios más grandes de la antigüedad en pocos años.
+        Murió joven en Babilonia, a los 32 años.
+      </p>
+
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+  <button>Videito informativo</button>
+</a>
+
+
+    </div>
+
+ <img src="IMGs/laurel.png" class="floating-element item1" alt="Casco romano">
+<img src="IMGs/Colomna1.2.png" class="floating-element item2" alt="Columna clásica">
+    <img src="IMGs/casco.png" class="floating-element item3" alt="Laurel romano">
+   
+  </main>
+
+  
+
+</body>
+
+<footer>
+  © 2025 - Alexiz ELvir Ñ
+</footer>
+
+</html>

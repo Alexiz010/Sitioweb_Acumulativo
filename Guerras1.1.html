@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Antigua Grecia</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script>
+
+    function toggleSubmenu() {
+      const submenu = document.getElementById('submenu');
+      submenu.classList.toggle('oculto');
+    }
+  
+    function mostrarContenido(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => sec.classList.add('oculto'));
+      
+      const mostrar = document.getElementById(id);
+      if (mostrar) {
+        mostrar.classList.remove('oculto');
+      }
+    }
+
+  </script>
+  </head>
+
+  <body class="cuerpo-guerras">
+    <aside class="sidebar-guerras">
+
+        <nav class="nav-guerras">
+            <ul>
+              <li><a href="index.html" >Inicio</a></li>
+                <li><a href="Biografia.html">Biografia</a></li>
+                  <li><a href="Reino-y-Conquista.html">Reino y Conquistas</a></li>
+            
+                  <div class="menu-principal">
+            
+                    <li><a class="active" onclick="toggleSubmenu()">Guerras importantes</a></li>
+            
+                    <div id="submenu" class="submenu oculto">
+                      <button onclick="mostrarContenido('granico')"> Batalla del Gránico</button>
+                      <a href="Guerras1.2.html"><button onclick="mostrarContenido('isus')">Batalla de Issos</button></a>
+                      <a href="Guerras1.3.html"><button onclick="mostrarContenido('gaugamela')">Batalla de Gaugamela</button></a>
+            
+                    </div>
+                    
+                  </div>
+            
+                  <li><a href="Ultimo-años-y-Muerte.html">Últimos Años y Muerte</a></li>
+                  <li><a href="Legado.html">Legado</a></li>
+                 <li><a href="Contactos.html">Contactanos</a></li>
+
+                </ul>
+                
+                </nav>
+
+                <img src="IMGs/Logo ITH.png" class="ithlogo" alt="ITH logo">
+            </aside>
+          
+            <main class="glass-container-guerras">
+              <div class="floating-text-guerras">
+                
+                
+                
+              </div>
+
+              
+                </main>
+
+                <div class="glass-guerras">
+                    <h1 class="encabezado-guerra1">🛡️ La Batalla del Gránico (334 a.C.)</h1>
+                    <div class="texto-gerra1-izquierda"> 
+                        <p>La Batalla del Gránico fue el primer gran enfrentamiento entre
+                             Alejandro Magno y el Imperio Persa. Ocurrió en mayo del año 
+                              334 a.C., a orillas del río Gránico (en la actual Turquía).
+                              Esta victoria fue crucial para iniciar la conquista de Asia
+                              Menor y consolidar la imagen de Alejandro como un líder    
+                              invencible.<br><br>
+
+                              <h2>📍 Contexto histórico</h2>
+                              El Imperio Persa dominaba Asia Menor.<br><br>
+                              
+                              Alejandro acababa de cruzar el Helesponto con su ejército.<br><br>
+                              
+                              Su objetivo era liberar a las ciudades griegas bajo dominio 
+                              persa.<br><br>
+                              
+                              <h2>⚔️ Fuerzas en combate</h2>
+                              Ejército de Alejandro Magno:<br><br>
+                              
+                              Compuesto por macedonios y aliados griegos.<br><br>
+                              
+                              Contaba con caballería pesada, falanges, arqueros y tropas 
+                              auxiliares.<br><br>
+                              
+                              <h3>Ejército persa:<br></h3>
+                              
+                              Comandado por sátrapas persas (gobernadores locales).<br><br>
+                              
+                              Mayoría caballería y mercenarios griegos contratados por  
+                              Darío III.
+                            </p>
+
+
+                    
+                    
+                    </div>
+                    
+                    <video width="640" height="360" controls>
+                    <source src="IMGs/Alejandro Magno y el Imperio de Macedonia.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                    </video>
+                    
+                    
+                    <div class="texto-gerra1-derecha">
+                        <p>
+                            <h2>Desarrollo de la batalla</h2> 
+                            -Alejandro cruzó el río Gránico al frente de la caballería.<br>
+                            
+                            -Atacó directamente el flanco persa, generando confusión.<br>
+                            
+                            -Las falanges cruzaron después para reforzar el ataque.<br>
+                            
+                            -La caballería persa fue derrotada.<br>
+                            
+                            -Los mercenarios griegos al servicio de Persia fueron rodeados 
+                            y aniquilados.<br>
+                            
+                            -La victoria fue completa y decisiva.<br><br>
+                            
+                            
+                            <h2>⭐ Consecuencias</h2>
+                            Comenzó la conquista de Asia Menor.<br>
+                            
+                            -Alejandro fue reconocido como libertador por varias ciudades
+                             griegas de Asia.<br>
+                            
+                            -Impulsó su prestigio como líder militar en Grecia y el 
+                            extranjero.<br>
+
+                            -Gran parte de las ciudades jonias se rindieron sin 
+                            resistencia.<br>
+
+                            -Fue el primer paso para enfrentarse directamente al rey persa
+                            Darío III.<br>
+
+                            <h2>📌 Curiosidades</h2>
+                            -Alejandro fue herido en esta batalla, pero continuó luchando.<br>
+                            
+                            -Muchos sátrapas persas murieron en combate.<br>
+                            
+                            -La victoria demostró la superioridad táctica del ejército macedonio 
+                            frente al persa.
+
+                            </p>
+               
+                      </div>
+                  </div>
+
+    </body>
+
+    <footer class="footer-guerras">
+      © 2025 - Alexiz ELvir Ñ
+    </footer>
+    
+    </html>

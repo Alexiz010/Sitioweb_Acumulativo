@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Antigua Grecia</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script>
+
+    function toggleSubmenu() {
+      const submenu = document.getElementById('submenu');
+      submenu.classList.toggle('oculto');
+    }
+  
+    function mostrarContenido(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => sec.classList.add('oculto'));
+      
+      const mostrar = document.getElementById(id);
+      if (mostrar) {
+        mostrar.classList.remove('oculto');
+      }
+    }
+
+  </script>
+  </head>
+
+  <body class="cuerpo-Legado">
+    <aside class="sidebar-Legado">
+
+        <nav class="nav-Legado">
+            <ul>
+              <li><a href="index.html" >Inicio</a></li>
+                <li><a>Biografia</a></li>
+                  <li><a href="Reino-y-Conquista.html">Reino y Conquistas</a></li>
+            
+                  <div class="menu-principal">
+            
+                    <li><a class= "btnGuerras"onclick="toggleSubmenu()">Guerras importantes</a></li>
+            
+                    <div id="submenu" class="submenu oculto">
+                      <a href="Guerras1.1.html"><button onclick="mostrarContenido('granico')">Batalla del Gránico</button></a>
+          <a href="Guerras1.2.html"><button onclick="mostrarContenido('isus')">Batalla de Isus</button></a>
+          <a href="Guerras1.3.html"><button onclick="mostrarContenido('gaugamela')">Batalla de Gaugamela</button></a>
+            
+                    </div>
+                    
+                  </div>
+            
+                  <li><a href="Ultimo-años-y-Muerte.html">Últimos Años y Muerte</a></li>
+                  <li><a class="active">Legado</a></li>
+                  <li><a href="Contactos.html">Contactanos</a></li>
+                </ul>
+                
+                </nav>
+
+                <img src="IMGs/Logo ITH.png" class="ithlogo" alt="ITH logo">
+            </aside>
+          
+            <main class="glass-container-biografia">
+              <div class="floating-text-biografia">
+                
+                
+                
+              </div>
+
+              
+                </main>
+
+                <div class="glass-container-Legado">
+                    <section class="tabla-legado">
+
+  <h2>Legado de Alejandro Magno</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Aspecto</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Expansión Cultural</td>
+        <td>Fomentó la fusión entre culturas griega, persa, egipcia e india.</td>
+      </tr>
+      <tr>
+        <td>Ciudades Fundadas</td>
+        <td>Fundó más de 20 ciudades, muchas llamadas Alejandría.</td>
+      </tr>
+      <tr>
+        <td>Educación y Ciencia</td>
+        <td>Impulsó el pensamiento helenístico y la difusión del conocimiento.</td>
+      </tr>
+      <tr>
+        <td>Modelo de Liderazgo</td>
+        <td>Inspiró a líderes posteriores como César y Napoleón.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+  <div class="Glass-imgs">
+      <p>-</p>
+  </div>
+  
+      <img src="IMGs/Guerra1.jpg" class="ImgLegado1">
+      <img src="IMGs/Guerra3.3jpg.jpg" class="ImgLegado2">
+      <img src="IMGs/Guerra3.1.jpg" class="ImgLegado3">
+      <img src="IMGs/Guerra2.2issos.png" class="ImgLegado4">
+      <img src="IMGs/Guerra2.1issos.png" class="ImgLegado5">
+  
+  <div class="texto-derecha-Legado">
+    <p>
+      <h2>📜 Legado de Alejandro Magno</h2><br>
+      Alejandro Magno no solo fue un conquistador brillante, sino también una figura que dejó una 
+      profunda huella en la historia mundial. Su legado transformó el mundo antiguo en múltiples 
+      aspectos, especialmente en lo cultural, político y militar.<      Tras conquistar el vasto Imperio Persa, Alejandro promovió activamente la fusión entre las 
+      culturas orientales y occidentales, dando origen a una nueva era conocida como el helenismo. 
+      Durante esta época, la cultura griega se mezcló con la persa, la egipcia y la india, lo que 
+      resultó en avances significativos en el arte, la arquitectura, la ciencia, la filosofía y la literatura.<br><br>
+      
+      Uno de sus logros más tangibles fue la fundación de ciudades, muchas de ellas llamadas 
+      "Alejandría", que se convirtieron en centros clave del conocimiento y el comercio. La más 
+      famosa de ellas, Alejandría en Egipto, albergó la legendaria Biblioteca de Alejandría, una de 
+      las más grandes del mundo antiguo.<br><br>
+      
+      En lo militar, Alejandro es considerado un genio táctico. Su forma de liderar y planificar batallas 
+      fue estudiada por estrategas a lo largo de los siglos. Figuras como Julio César, Napoleón Bonaparte 
+      y Aníbal se inspiraron en él. Además, sus campañas contribuyeron al intercambio de ideas, tecnologías 
+      y costumbres entre Oriente y Occidente.<br><br>
+      
+      A pesar de su corta vida, la influencia de Alejandro Magno perduró durante siglos. Fue clave en el 
+      surgimiento del mundo grecorromano y sentó las bases para el desarrollo de la civilización occidental. 
+      Su figura continúa siendo símbolo de liderazgo, ambición y grandeza.
+    
+    </div>
+</div>
+
+    </body>
+
+    <footer class="footer-Legado">
+      © 2025 - Alexiz ELvir Ñ
+    </footer>
+    
+    </html>

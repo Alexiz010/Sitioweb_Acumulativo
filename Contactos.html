@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Antigua Grecia</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script>
+
+    function toggleSubmenu() {
+      const submenu = document.getElementById('submenu');
+      submenu.classList.toggle('oculto');
+    }
+  
+    function mostrarContenido(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => sec.classList.add('oculto'));
+      
+      const mostrar = document.getElementById(id);
+      if (mostrar) {
+        mostrar.classList.remove('oculto');
+      }
+    }
+
+  </script>
+
+  
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script>
+  function mostrarIframe(url) {
+    const iframe = document.getElementById('iframe-red');
+    iframe.src = url;
+    iframe.style.display = 'block';
+  }
+</script>
+
+<script>
+  function mostrarEnlace(url) {
+    const contenedor = document.getElementById('contenedor-link');
+    const enlace = document.getElementById('enlace-red');
+    enlace.href = url;
+    contenedor.style.display = 'block';
+  }
+</script>
+
+<script>
+  function mostrarEnlace(url) {
+    const contenedor = document.getElementById('contenedor-link');
+    const enlace = document.getElementById('enlace-red');
+
+    // Mostrar enlace
+    enlace.href = url;
+    contenedor.style.display = 'block';
+
+    // Quitar clase "activo" de todos los íconos
+    const iconos = document.querySelectorAll('.iconos-redes img');
+    iconos.forEach(icono => icono.classList.remove('activo'));
+
+    // Agregar clase "activo" solo al que se clickeó
+    event.target.classList.add('activo');
+  }
+</script>
+
+  </head>
+
+  <body class="cuerpo-contacto">
+    <aside class="sidebar-contacto">
+
+        <nav class="nav-contacto">
+            <ul>
+              <li><a href="index.html" >Inicio</a></li>
+                <li><a>Biografia</a></li>
+                  <li><a href="Reino-y-Conquista.html">Reino y Conquistas</a></li>
+            
+                  <div class="menu-principal">
+            
+                    <li><a class= "btnGuerras"onclick="toggleSubmenu()">Guerras importantes</a></li>
+            
+                    <div id="submenu" class="submenu oculto">
+                      <a href="Guerras1.1.html"><button onclick="mostrarContenido('granico')">Batalla del Gránico</button></a>
+          <a href="Guerras1.2.html"><button onclick="mostrarContenido('isus')">Batalla de Isus</button></a>
+          <a href="Guerras1.3.html"><button onclick="mostrarContenido('gaugamela')">Batalla de Gaugamela</button></a>
+            
+                    </div>
+                    
+                  </div>
+            
+                  <li><a href="Ultimo-años-y-Muerte.html">Últimos Años y Muerte</a></li>
+                  <li><a  href="Legado.html">Legado</a></li>
+                  <li><a class="active">Contactanos</a></li>
+                  
+                </ul>
+                
+                </nav>
+
+                <img src="IMGs/Logo ITH.png" class="ithlogo" alt="ITH logo">
+            </aside>
+          
+            <main class="glass-container-contacto">
+
+                
+
+              <div class="formulario-container">
+  <h2>Contáctanos</h2>
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+
+              
+                </main>
+
+                <div class="glass-container-contacto">
+                    
+<!-- Asegúrate de que esta línea esté en tu <head> para que los iconos funcionen -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+          <!-- Contenedor de redes sociales -->
+<h2 class="titulo-redes">Sígueme en mis redes sociales</h2>
+<div class="iconos-redes">
+  <img src="IMGs/Instagram.jpg" onclick="mostrarEnlace('https://www.instagram.com/bit_boy_16?igsh=OXNldWtkYndrdzFz')" alt="Instagram">
+  <img src="IMGs/WhatsApp.jpg" onclick="mostrarEnlace('https://wa.me/+50432022531')" alt="WhatsApp">
+  <img src="IMGs/Tikitokos.png" onclick="mostrarEnlace('https://www.tiktok.com/@kennzo_10')" alt="TikTok">
+  <img src="IMGs/X(twetter).png" onclick="mostrarEnlace('https://x.com/BIT_BOY_16')" alt="X">
+  <img src="IMGs/Telegram.png" onclick="mostrarEnlace('https://t.me/BIT_BOY16')" alt="Telegram">
+</div>
+
+<!-- Contenedor donde aparece el link -->
+<div id="contenedor-link" class="link-red-social" style="display: none;">
+  <p>Haz clic para visitar:</p>
+  <a id="enlace-red" href="#" target="_blank">Ver red social</a>
+</div>
+
+
+  <!-- IFRAME -->
+  <iframe id="iframe-red" style="display: none; width: 100%; height: 400px; margin-top: 20px; border: none; border-radius: 20px;"></iframe>
+</div>
+          
+
+              
+
+
+                      </div>
+                  </div>
+
+
+
+
+
+
+
+    </body>
+
+    <footer class="footer-contacto">
+      © 2025 - Alexiz ELvir Ñ
+    </footer>
+    
+    </html>
